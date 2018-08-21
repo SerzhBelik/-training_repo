@@ -7,6 +7,8 @@ public class Main {
         TeamMember teamMember2 = new TeamMember("Bob");
         TeamMember teamMember3 = new TeamMember("Jane");
         TeamMember teamMember4 = new TeamMember("Kate");
+        teamMember4.setPassedStatus(TeamMember.PASSED);
+        teamMember2.setPassedStatus(TeamMember.PASSED);
 
 //            Course c = new Course(); // Создаем полосу препятствий
         Team team = new Team("Atlanta", teamMember1, teamMember2, teamMember3, teamMember4); // Создаем команду

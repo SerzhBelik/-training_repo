@@ -15,12 +15,28 @@ public class Team {
 
     public String getTeamMembersInfo(){
         StringBuilder s = new StringBuilder("Team " + teamName + " consist: ");
+
         for (int i =0; i < this.TeamMembers.length; i++){
-            s.append(TeamMembers[i].getName());
-            if (i < this.TeamMembers.length){
-                s.append(", ");
-            } else s.append(".");
+
+                if(i!=0) s.append(", ");
+                s.append(TeamMembers[i].getName());
+
         }
+        s.append(".");
+        return s.toString();
+    }
+
+    public String getWhoPassed(){
+        StringBuilder s = new StringBuilder("Course passed: ");
+        int j = 0;
+        for (int i =0; i < this.TeamMembers.length; i++){
+            if(TeamMembers[i].getPassedStatus().equals(TeamMember.PASSED)) {
+                if(j!=0) s.append(", ");
+                s.append(TeamMembers[i].getName());
+                j++;
+            } else continue;
+        }
+        s.append(".");
         return s.toString();
     }
     }
