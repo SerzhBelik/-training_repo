@@ -10,10 +10,11 @@ public class Main {
         teamMember4.setPassedStatus(TeamMember.PASSED);
         teamMember2.setPassedStatus(TeamMember.PASSED);
 
-//            Course c = new Course(); // Создаем полосу препятствий
+        Course c = new Course(4); // Создаем полосу препятствий
         Team team = new Team("Atlanta", teamMember1, teamMember2, teamMember3, teamMember4); // Создаем команду
-        System.out.println(team.getTeamMembersInfo());
-//            c.doIt(team); // Просим команду пройти полосу
+
+        c.doIt(team); // Просим команду пройти полосу
+//        System.out.println(teamMember1.getPassedStatus());
 //            team.showResults(); // Показываем результаты
         }
     }

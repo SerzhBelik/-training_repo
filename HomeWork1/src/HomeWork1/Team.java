@@ -2,8 +2,8 @@ package HomeWork1;
 
 public class Team {
     private String teamName;
-    private TeamMember[] TeamMembers;
-    private int taemScore = 0;
+    TeamMember[] TeamMembers;
+    int taemScore = 0;
     Team(String teamName, TeamMember ... teamMemberName){
         this.teamName = teamName;
         TeamMembers = new TeamMember[teamMemberName.length];
