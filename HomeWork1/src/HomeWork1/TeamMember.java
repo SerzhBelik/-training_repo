@@ -4,7 +4,7 @@ public class TeamMember {
     private  String name;
     private  String passedStatus = DID_NOT_PASS;
     final static String DID_NOT_PASS = "did not pass obstacle course!";
-    final static String PASSED = "passed obstacle course!";
+    final static String PASSED = "passed course!";
     static String DISCQUAL = "disqualified!";
     int personalScore =0;
 

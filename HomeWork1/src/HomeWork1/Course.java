@@ -9,21 +9,23 @@ public class Course {
         for(int i = 0; i<barriersNumber; i++){
         barriersHeight[i] = Math.random()+1;
         }
-
-
     }
 
     public void doIt(Team team){
-        for(int i = 0; i<team.TeamMembers.length; i++){
+        for(int i = 0; i<team.teamMembers.length; i++){
             for (int j = 0; j<barriersNumber; j++){
                 if(getJumpHeight()>barriersHeight[j]){
-                    team.TeamMembers[i].personalScore += (int)(barriersHeight[j]*100);
-                    team.taemScore += team.TeamMembers[i].personalScore;
+                    team.teamMembers[i].personalScore += (int)(barriersHeight[j]*100);
+                    if (j==team.teamMembers.length-1){
+                        team.teamScore += team.teamMembers[i].personalScore;
+                        team.teamMembers[i].setPassedStatus(TeamMember.PASSED);
+                    }
                 } else {
-                    team.TeamMembers[i].setPassedStatus(TeamMember.DISCQUAL);
+                    team.teamMembers[i].setPassedStatus(TeamMember.DISCQUAL);
+                    team.teamScore += team.teamMembers[i].personalScore;
                     break;
                 }
-            }
+        }
         }
     }
 
