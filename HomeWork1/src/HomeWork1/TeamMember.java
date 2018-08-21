@@ -22,5 +22,4 @@ public class TeamMember {
     public void setPassedStatus(String passedStatus){
         this.passedStatus = passedStatus;
     }
-
 }

@@ -19,8 +19,8 @@ public class Team {
 
         for (int i =0; i < this.teamMembers.length; i++){
 
-                if(i!=0) s.append(", ");
-                s.append(teamMembers[i].getName());
+            if(i!=0) s.append(", ");
+            s.append(teamMembers[i].getName());
         }
         s.append(".");
         return s.toString();

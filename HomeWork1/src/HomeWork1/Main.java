@@ -15,6 +15,7 @@ public class Main {
         c.doIt(team); // Просим команду пройти полосу
 
         team.showResults(); // Показываем результаты
-        }
     }
+        }
+
 

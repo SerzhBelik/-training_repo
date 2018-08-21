@@ -7,7 +7,7 @@ public class Course {
         barriersHeight = new double[barriersNumber];
         this.barriersNumber = barriersNumber;
         for(int i = 0; i<barriersNumber; i++){
-        barriersHeight[i] = Math.random()+1;
+            barriersHeight[i] = Math.random()+1;
         }
     }
 
@@ -25,7 +25,7 @@ public class Course {
                     team.teamScore += team.teamMembers[i].personalScore;
                     break;
                 }
-        }
+            }
         }
     }
 
