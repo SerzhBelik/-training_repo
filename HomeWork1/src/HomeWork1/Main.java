@@ -3,7 +3,7 @@ package HomeWork1;
 public class Main {
 
     public static void main(String[] args) {
-        TeamMember teamMember1 = new TeamMember("Alex");// создаем список участников
+        TeamMember teamMember1 = new TeamMember("Alex");// создаем участников
         TeamMember teamMember2 = new TeamMember("Bob");
         TeamMember teamMember3 = new TeamMember("Jane");
         TeamMember teamMember4 = new TeamMember("Kate");
