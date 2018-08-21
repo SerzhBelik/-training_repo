@@ -11,4 +11,11 @@ public class TeamMember {
         this.name = name;
     }
 
+    public String getName(){
+        return this.name;
+    }
+    public String getPassedStatus(){
+        return this.passedStatus;
+    }
+
 }

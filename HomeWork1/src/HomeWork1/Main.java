@@ -3,9 +3,14 @@ package HomeWork1;
 public class Main {
 
     public static void main(String[] args) {
+        TeamMember teamMember1 = new TeamMember("Alex");
+        TeamMember teamMember2 = new TeamMember("Bob");
+        TeamMember teamMember3 = new TeamMember("Jane");
+        TeamMember teamMember4 = new TeamMember("Kate");
 
-            Course c = new Course(); // Создаем полосу препятствий
-//            Team team = new Team(name, ); // Создаем команду
+//            Course c = new Course(); // Создаем полосу препятствий
+        Team team = new Team("Atlanta", teamMember1, teamMember2, teamMember3, teamMember4); // Создаем команду
+        System.out.println(team.getTeamMembersInfo());
 //            c.doIt(team); // Просим команду пройти полосу
 //            team.showResults(); // Показываем результаты
         }
